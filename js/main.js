@@ -83,6 +83,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const listItems = document.querySelectorAll('.list__item')
         const lists = document.querySelectorAll('.list')
 
+
+        // -----------------------------------
+        const boards = document.querySelectorAll('.boards')
+        boards.forEach(e => {
+            e.addEventListener('dblclick', () => {
+                e.remove()
+            })
+        });
+        // ------------------------------------
+        
+
+
         for(let i = 0; i<listItems.length; i++){
             const item = listItems[i]
 
